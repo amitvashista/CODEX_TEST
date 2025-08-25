@@ -1,0 +1,13 @@
+
+# Merge these into your existing config.yaml
+reference:
+  nse_symbols_csv: "data/reference/nse_symbols.csv"
+
+nlp:
+  sentiment:
+    engine: "rule"            # or "hf_finbert" if transformers installed
+    hf_model: "ProsusAI/finbert"
+  events:
+    enabled: true
+  ticker_map:
+    max_symbols: 5
